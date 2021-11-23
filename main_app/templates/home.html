@@ -11,4 +11,14 @@
   <h1>Welcome to the Poemverse</h1>
   <p>"Every single soul is a poem."<br>
     Michael Franti</p>
+{% if not user.is_authenticated %}
+  <section>
+    <form action="{% url 'home' %}" method='post' class='login' %>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name='next' value="{{ next }}">
+    <button type="submit" name='submit' class='login-btn'>Login</button>
+    </form>
+  </section>
+{% endif %}
 {% endblock body %}
