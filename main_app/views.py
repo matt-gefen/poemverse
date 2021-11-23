@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Poem
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 
 # Create your views here.
-def home(request):
-  return HttpResponse("Poetry is ordinary language raised to the Nth power.")
+class Home(LoginView):
+  template_name = 'home.html'
