@@ -3,14 +3,17 @@
 
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
 {% endblock head %}
-{% block body %}
+{% block content %}
   {% comment %} <h1>Index</h1> {% endcomment %}
-  <h2>{{poem.title}}</h2>
-  <h3>{{poem.author}}</h3>
-  <ul>
-  {% for line in poem.lines  %}
-    <li>{{line}}</li>
-  {% endfor %}
-  </ul>
-{% endblock body %}
+  <div>
+    <h2>{{poem.title}}</h2>
+    <h3>{{poem.author}}</h3>
+    <ul class='poem-list'>
+    {% for line in poem.lines  %}
+      <li>{{line}}</li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}

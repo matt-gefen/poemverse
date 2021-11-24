@@ -12,16 +12,16 @@
   {% endblock %}
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href=""></a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <h3>Poemverse</h3>
+    <ul class='nav-ul'>
+      <li><a class='nav-link' href="{% url 'poems_index' %}">Poem</a></li>
+      {% comment %} <li><a class='nav-link' href="{% url 'poems_index' %}">Fake Extra</a></li> {% endcomment %}
+    </ul>
+  </nav>
   <main>
-    {% block body %}
-    {% endblock body %}
+    {% block content %}
+    {% endblock content %}
   </main>
 </body>
 </html>
