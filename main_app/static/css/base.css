@@ -22,12 +22,15 @@ nav {
   margin: 20px;
   /* position: fixed; */
   /* top: 0; */
+  font-size: 20px;
 }
 
 .nav-ul {
   list-style-type: none;
-  padding: 0px;
+  /* padding: 0px; */
   display: inline;
+  list-style: none;
+  padding-right: 20px;
 }
 
 .nav-ul li {
