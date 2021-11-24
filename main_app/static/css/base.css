@@ -16,13 +16,10 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  /* justify-content: right; */;
   gap: 10px;
-  padding: 10px;
-  margin: 20px;
-  /* position: fixed; */
-  /* top: 0; */
   font-size: 20px;
+  /* top: 0; */
 }
 
 .nav-ul {
@@ -38,7 +35,6 @@ nav {
 }
 
 .nav-link:link {
-  padding: 10px;
   text-decoration: none;
   color: white;
 }
