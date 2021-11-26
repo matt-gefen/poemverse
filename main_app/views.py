@@ -42,7 +42,10 @@ def signup(request):
 class PoemCreate(CreateView):
   model = Poem
   fields = ['title', 'author', 'lines']
-  success_url = 'poems/'
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
+  success_url = '/poems/'
 
 def poems_add(request):
   poem = Poem.objects.get(pk=6)

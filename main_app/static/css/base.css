@@ -24,7 +24,7 @@ nav {
 
 .nav-ul {
   list-style-type: none;
-  /* padding: 0px; */
+  /* padding: 10px; */
   display: inline;
   list-style: none;
   padding-right: 20px;
@@ -32,6 +32,11 @@ nav {
 
 .nav-ul li {
   float: left;
+  padding: 10px;
+}
+
+a {
+  padding: 20px;
 }
 
 .nav-link:link {
