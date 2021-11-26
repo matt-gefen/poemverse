@@ -16,4 +16,11 @@
     {% endfor %}
     </ul>
   </div>
+  <form action="{% url 'poems_add' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden"  name='title' value={{poem.title}}>
+    <input type="hidden"  name='author' value={{poem.author}}>
+    <input type="hidden"  name='lines' value={{poem.lines}}>
+    <button type="submit" class="submit-form">*</button>
+  </form>
 {% endblock content %}

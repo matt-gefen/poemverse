@@ -48,6 +48,5 @@ class PoemCreate(CreateView):
   success_url = '/poems/'
 
 def poems_add(request):
-  poem = Poem.objects.get(pk=6)
-  poem.lines = poem.lines.replace("\r", '<br>')
-  return HttpResponse(f'{poem.lines}')
+  print('what')
+  return HttpResponse('what')
