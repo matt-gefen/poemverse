@@ -24,7 +24,6 @@ def poems_index(request):
 def signup(request):
   error_message = ''
   if request.method == 'POST':
-
     form = UserCreationForm(request.POST)
     if form.is_valid():
       user = form.save()
@@ -35,3 +34,13 @@ def signup(request):
   form = UserCreationForm()
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context)
+
+class PoemCreate(CreateView):
+  model = Poem
+  fields = ['title', 'author', 'lines']
+  success_url = '/poems/'
+
+def poems_add(request):
+  poem = Poem.objects.get(pk=6)
+  poem.lines = poem.lines.replace("\r", '<br>')
+  return HttpResponse(f'{poem.lines}')
