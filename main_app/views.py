@@ -3,9 +3,13 @@ from django.http import HttpResponse
 from .models import Poem
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 import requests
 import json
+from django.contrib.auth import authenticate, login
+from django.shortcuts import redirect
 
 # Create your views here.
 class Home(LoginView):
@@ -38,7 +42,7 @@ def signup(request):
 class PoemCreate(CreateView):
   model = Poem
   fields = ['title', 'author', 'lines']
-  success_url = '/poems/'
+  success_url = 'poems/'
 
 def poems_add(request):
   poem = Poem.objects.get(pk=6)

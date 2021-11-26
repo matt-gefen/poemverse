@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block head %}
-
 {% endblock %}
 
 {% block content %}
@@ -11,14 +10,14 @@
   <h1>Sign Up</h1>
 </div>
 {% if error_message %}
-  <p>{{ error_message }}</p>
+  <p class="red-text">{{ error_message }}</p>
 {% endif %}
 <form action="" method="post" class="form-container" autocomplete="off">
   {% csrf_token %}
   <table>
     {{ form.as_table }}
   </table>
-  <button type="submit" class="submit-btn">Submit</button>
+  <button type="submit">Submit</button>
 </form>
 
 {% endblock %}

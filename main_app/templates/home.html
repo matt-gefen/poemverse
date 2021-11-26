@@ -7,7 +7,7 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
 {% endblock head %}
-{% block body %}
+{% block content %}
   <h1>Welcome to the Poemverse</h1>
   <p>"Every single soul is a poem."<br>
     Michael Franti</p>
@@ -22,4 +22,4 @@
     <a href="{% url 'signup' %}"><button class='login-btn'>Sign Up</button</a></li>
   </section>
 {% comment %} {% endif %} {% endcomment %}
-{% endblock body %}
+{% endblock content %}
