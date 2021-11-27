@@ -2,16 +2,20 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/> {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+<script defer src="{% static '/js/cards.js' %}"></script>
 {% endblock head %}
 {% block content %}
 
 {% for poem in poems %}
-  <div>
+  <div class="poem">
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
+    <button class='show-button' onclick="hidePoem('{{poem.title}}')"></button>
+    <div class='poem-text' name="{{poem.title}}" hidden>
     <p>{{poem.lines|linebreaksbr}}</p>
+    </div>
     <a href="{% url 'poems_delete' poem.id %}">Remove</a>
   </div>
 {% endfor %}

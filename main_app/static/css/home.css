@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url("/static/images/space_background.jpg");
+  /* background-image: url("/static/images/juan-pablo-serrano-arenas.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   color: white;

@@ -1,5 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #C5C9BF;
+  /* background-color: #DDBEA9; */
+  /* color: #555A49; */
+  color: #5F7470;
+  /* text-shadow: 2px 2px 4px #000000; */
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 1em;
+  text-align: left;
+}
+
+h1, p {
+  font-weight: 100;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn {
+  width: 50%;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+}
+
 .poem-list {
   list-style-type: none;
   list-style: none;
   padding: 0;
+}
+
+.poem {
+  text-align: left;
+  background-color: #E0E2DB;
+  /* border-radius: 25%; */
+  padding: 20px;
+  margin: 20px;
+  width: 75%;
+  box-shadow: 0 4px 8px 0 #889696, 0 6px 20px 0 #889696;
 }
