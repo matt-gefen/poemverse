@@ -22,6 +22,9 @@ def poems_index(request):
     response = requests.get('https://poetrydb.org/random').json()
     response = response[0]
     linecount = response['linecount']
+  
+  s = "\n"
+  response['lines'] = s.join(response['lines'])
 
   return render(request, 'poems/index.html', {'poem':response} )
 
@@ -48,5 +51,10 @@ class PoemCreate(CreateView):
   success_url = '/poems/'
 
 def poems_add(request):
-  print('what')
-  return HttpResponse('what')
+  form = request.POST
+  form.user = request.user
+  print(form)
+  # new_poem = Poem.objects.create(title=form.title,author=form.author,lines=form.lines)
+  # return redirect('poems_index')
+  return HttpResponse(form["lines"])
+

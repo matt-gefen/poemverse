@@ -10,17 +10,18 @@
   <div>
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
-    <ul class='poem-list'>
-    {% for line in poem.lines  %}
-      <li>{{line}}</li>
-    {% endfor %}
-    </ul>
+    {% comment %} <ul class='poem-list'> {% endcomment %}
+    {% comment %} {% for line in poem.lines  %} {% endcomment %}
+      {% comment %} <li>{{line}}</li> {% endcomment %}
+    {% comment %} {% endfor %} {% endcomment %}
+    {% comment %} </ul> {% endcomment %}
+    <p>{{poem.lines|linebreaksbr}}</p>
   </div>
   <form action="{% url 'poems_add' %}" method="post">
     {% csrf_token %}
     <input type="hidden"  name='title' value={{poem.title}}>
     <input type="hidden"  name='author' value={{poem.author}}>
-    <input type="hidden"  name='lines' value={{poem.lines}}>
+    <text type="hidden"  name='lines' value={{poem.lines}}>
     <button type="submit" class="submit-form">*</button>
   </form>
 {% endblock content %}
