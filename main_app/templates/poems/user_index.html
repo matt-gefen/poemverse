@@ -1,0 +1,18 @@
+{% extends 'base_nav.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+{% endblock head %}
+{% block content %}
+
+{% for poem in poems %}
+  <div>
+    <h2>{{poem.title}}</h2>
+    <h3>{{poem.author}}</h3>
+    <p>{{poem.lines|linebreaksbr}}</p>
+  </div>
+{% endfor %}
+
+{% endblock content %}

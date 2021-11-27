@@ -35,7 +35,12 @@ def poems_index(request):
     return render(request, 'poems/index.html', {'poem':response} )
 
   
-  # return render(request, 'poems/index.html', {'poem':response} )
+def user_index(request):
+  poems = Poem.objects.filter(user=request.user)
+  for poem in poems:
+    s = "\n"
+    poem.lines = poem.lines.replace("<br>", s)
+  return render(request, 'poems/user_index.html', { 'poems': poems })
 
 def signup(request):
   error_message = ''
@@ -64,5 +69,5 @@ def poems_add(request):
   form.user = request.user
   new_poem = Poem.objects.create(title=form["title"],author=form["author"],lines=form["lines"], user=form.user)
   new_poem.save()
-  return redirect('poems_index')
+  return redirect('user_index')
 
