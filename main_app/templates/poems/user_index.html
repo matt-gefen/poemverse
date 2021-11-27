@@ -12,6 +12,7 @@
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
     <p>{{poem.lines|linebreaksbr}}</p>
+    <a href="{% url 'poems_delete' poem.id %}">Remove</a>
   </div>
 {% endfor %}
 

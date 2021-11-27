@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
 {% endblock head %}
 {% block content %}
-  {% comment %} <h1>Index</h1> {% endcomment %}
   <div>
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
@@ -19,4 +18,5 @@
     <textarea type='text' name='lines' hidden>{{poem.lines|linebreaksbr}}</textarea>
     <button type="submit" class="submit-form">*</button>
   </form>
+  <a href="{% url 'poems_index' %}"><button type="submit" class="submit-form">Refresh</button></a>
 {% endblock content %}

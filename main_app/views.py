@@ -71,3 +71,6 @@ def poems_add(request):
   new_poem.save()
   return redirect('user_index')
 
+class PoemDelete(DeleteView):
+  model = Poem
+  success_url = '/poems/myverse'
