@@ -26,7 +26,16 @@ def poems_index(request):
   s = "\n"
   response['lines'] = s.join(response['lines'])
 
-  return render(request, 'poems/index.html', {'poem':response} )
+  user = request.user
+  try:
+    print(Poem.objects.get(title=response["title"], user=user))
+  except:
+    print("Does not exist")
+  finally:
+    return render(request, 'poems/index.html', {'poem':response} )
+
+  
+  # return render(request, 'poems/index.html', {'poem':response} )
 
 def signup(request):
   error_message = ''
@@ -53,10 +62,7 @@ class PoemCreate(CreateView):
 def poems_add(request):
   form = request.POST
   form.user = request.user
-  print(form["lines"])
   new_poem = Poem.objects.create(title=form["title"],author=form["author"],lines=form["lines"], user=form.user)
-  # print(new_poem)
   new_poem.save()
   return redirect('poems_index')
-  # return HttpResponse(form["lines"])
 

@@ -10,11 +10,6 @@
   <div>
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
-    {% comment %} <ul class='poem-list'> {% endcomment %}
-    {% comment %} {% for line in poem.lines  %} {% endcomment %}
-      {% comment %} <li>{{line}}</li> {% endcomment %}
-    {% comment %} {% endfor %} {% endcomment %}
-    {% comment %} </ul> {% endcomment %}
     <p>{{poem.lines|linebreaksbr}}</p>
   </div>
   <form action="{% url 'poems_add' %}" method="post">
