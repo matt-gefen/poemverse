@@ -19,9 +19,9 @@
   </div>
   <form action="{% url 'poems_add' %}" method="post">
     {% csrf_token %}
-    <input type="hidden"  name='title' value={{poem.title}}>
-    <input type="hidden"  name='author' value={{poem.author}}>
-    <text type="hidden"  name='lines' value={{poem.lines}}>
+    <textarea type='text' name='title' hidden>{{poem.title|linebreaksbr}}</textarea>
+    <textarea type='text' name='author' hidden>{{poem.author|linebreaksbr}}</textarea>
+    <textarea type='text' name='lines' hidden>{{poem.lines|linebreaksbr}}</textarea>
     <button type="submit" class="submit-form">*</button>
   </form>
 {% endblock content %}

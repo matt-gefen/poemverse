@@ -53,8 +53,10 @@ class PoemCreate(CreateView):
 def poems_add(request):
   form = request.POST
   form.user = request.user
-  print(form)
-  # new_poem = Poem.objects.create(title=form.title,author=form.author,lines=form.lines)
-  # return redirect('poems_index')
-  return HttpResponse(form["lines"])
+  print(form["lines"])
+  new_poem = Poem.objects.create(title=form["title"],author=form["author"],lines=form["lines"], user=form.user)
+  # print(new_poem)
+  new_poem.save()
+  return redirect('poems_index')
+  # return HttpResponse(form["lines"])
 
