@@ -10,6 +10,7 @@
 
 {% for poem in poems %}
   <div class="poem">
+  <div>
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
     <button class='show-button' onclick="hidePoem('{{poem.title}}')">View</button>
@@ -17,6 +18,7 @@
     <p>{{poem.lines|linebreaksbr}}</p>
     </div>
     <a href="{% url 'poems_delete' poem.id %}"><button>Remove</button></a>
+  </div>
   </div>
 {% endfor %}
 

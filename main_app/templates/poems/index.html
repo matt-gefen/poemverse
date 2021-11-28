@@ -17,7 +17,7 @@
     <form action="{% url 'poems_add' %}" class="poemverse-poem" method="post">
     {% csrf_token %}
     <div class='bookmark-container'>
-      <button type="submit" class="submit-form bookmark"><i class="fas fa-bookmark fa-4x"></i></button>
+      <button type="submit" class="submit-form bookmark"><i class="fas fa-bookmark fa-3x"></i></button>
     </div>
     <textarea type='text' name='title' hidden>{{poem.title|linebreaksbr}}</textarea>
     <textarea type='text' name='author' hidden>{{poem.author|linebreaksbr}}</textarea>

@@ -13,9 +13,8 @@
 </head>
 <body>
   <nav>
-    <h3 class='logo'>Poemverse</h3>
+    <a class='nav-link' href="{% url 'poems_index' %}"><h3 class='logo'>Poemverse</h3></a>
     <ul class='nav-ul'>
-      <li><a class='nav-link' href="{% url 'poems_index' %}">Poem</a></li>
       <li><a class='nav-link' href="{% url 'poems_create' %}">Add a Poem</a></li>
       <li><a class='nav-link' href="{% url 'user_index' %}">My Verse</a></li>
       <li><a class='nav-link' href="{% url 'logout' %}">Log out</a></li>
