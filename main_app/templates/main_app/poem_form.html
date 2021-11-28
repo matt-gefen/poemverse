@@ -7,7 +7,10 @@
 {% endblock head %}
 
 {% block content %}
-<div class="poem">
+<div class="poem poem-add">
+  <div>
+    <h2>Add Poem</h2>
+  </div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}
   <table>
