@@ -3,17 +3,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #ABC4B0; */
   background-image: url("/static/images/tree_background.svg");
   background-repeat: no-repeat; 
-  /* background-blend-mode:color; */
   background-size: cover;
   background-attachment: fixed;
   /* background-color: #DDBEA9; */
   /* color: #555A49; */
   color: #6B917E;
-  /* text-shadow: 2px 2px 4px #000000; */
-
 }
 
 main {
@@ -25,7 +21,7 @@ main {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
 }
 
@@ -58,11 +54,44 @@ h1, p {
 }
 
 .poem {
+  display: flex;
   text-align: left;
+  justify-content: space-between;
   background-color: #F4F6F3;
+  opacity: 90%;
   /* border-radius: 25%; */
   padding: 20px;
   margin: 20px;
   width: 75%;
-  box-shadow: 0 2px 4px 0 #424B54, 0 3px 10px 0 #424B54;
+  box-shadow: 0 2px 4px 0 #272b2e, 0 3px 10px 0 #272b2e;
+  border-radius: 25px;
+}
+
+.poemverse-poem {
+  /* width: 100%; */
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.submit-form {
+  background: transparent;
+  border: 0px;
+  color: #F4F6F3;
+}
+
+.bookmark {
+  color: #6B917E;
+}
+
+.bookmark-container {
+  /* padding-left: 20px; */
+  display: flex;
+  width: auto;
+  justify-content: right;
+  align-items: right;
+  /* position: fixed; */
 }
