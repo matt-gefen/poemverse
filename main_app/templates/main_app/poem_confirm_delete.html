@@ -1,8 +1,8 @@
-{% extends 'base.html' %}
+{% extends 'base_nav.html' %}
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/> {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
 {% endblock head %}
 
@@ -11,8 +11,6 @@
 <div class="page-header">
   <h1>Remove Poem?</h1>
 </div>
-<h2>Are you sure you want to delete {{ object.name }}?</h2>
-
 <form action="" method="POST" class="form">
   {% csrf_token %}
   <a 

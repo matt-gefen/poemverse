@@ -12,11 +12,11 @@
   <div class="poem">
     <h2>{{poem.title}}</h2>
     <h3>{{poem.author}}</h3>
-    <button class='show-button' onclick="hidePoem('{{poem.title}}')"></button>
+    <button class='show-button' onclick="hidePoem('{{poem.title}}')">View</button>
     <div class='poem-text' name="{{poem.title}}" hidden>
     <p>{{poem.lines|linebreaksbr}}</p>
     </div>
-    <a href="{% url 'poems_delete' poem.id %}">Remove</a>
+    <a href="{% url 'poems_delete' poem.id %}"><button>Remove</button></a>
   </div>
 {% endfor %}
 
