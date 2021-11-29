@@ -8,9 +8,11 @@
 
 {% block content %}
 
+<div class='poem poem-add'>
 <div class="page-header">
   <h1>Remove Poem?</h1>
 </div>
+<div>
 <form action="" method="POST" class="form">
   {% csrf_token %}
   <a 
@@ -20,5 +22,8 @@
   </a>
   <button type="submit">Remove</button>
 </form>
+</div>
+
+</div>
 
 {% endblock %}
