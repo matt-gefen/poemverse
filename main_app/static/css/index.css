@@ -83,6 +83,10 @@ h1, p {
   color: #6B917E;
 }
 
+.redo {
+  color: #F4F6F3;
+}
+
 .bookmark-container {
   /* padding-left: 20px; */
   display: flex;
