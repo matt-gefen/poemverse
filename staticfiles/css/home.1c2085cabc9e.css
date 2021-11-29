@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ABC4B0; */
+  background-image: url("/static/images/tree_background.a95f2f3627a2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 1em;
+  text-align: center;
+}
+
+h1, p {
+  font-weight: 100;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn {
+  width: 50%;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+}

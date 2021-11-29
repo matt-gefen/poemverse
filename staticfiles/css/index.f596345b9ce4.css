@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/static/images/tree_background.a95f2f3627a2.svg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: #DDBEA9; */
+  /* color: #555A49; */
+  color: #6B917E;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 1em;
+  text-align: left;
+}
+
+h1, p {
+  font-weight: 100;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn {
+  width: 50%;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+}
+
+.poem-list {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.poem {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  background-color: #F4F6F3;
+  opacity: 90%;
+  /* border-radius: 25%; */
+  padding: 20px;
+  margin: 20px;
+  width: 75%;
+  box-shadow: 0 2px 4px 0 #272b2e, 0 3px 10px 0 #272b2e;
+  border-radius: 25px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.submit-form {
+  background: transparent;
+  border: 0px;
+  color: #6B917E;
+}
+
+.bookmark {
+  color: #6B917E;
+}
+
+.redo {
+  color: #F4F6F3;
+}
+
+.bookmark-container {
+  /* padding-left: 20px; */
+  display: flex;
+  width: auto;
+  justify-content: right;
+  align-items: right;
+  /* position: fixed; */
+}
+
+.poem-add {
+  flex-direction: column;
+  padding-top: 2px;
+  padding-left: 15px;
+}
