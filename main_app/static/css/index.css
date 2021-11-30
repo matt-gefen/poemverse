@@ -143,6 +143,10 @@ h1, p {
   width: 100%;
 }
 
+.submit:hover {
+  background-color: #272b2e;
+}
+
 .bookmark {
   color: #6B917E;
   background-color: transparent;
