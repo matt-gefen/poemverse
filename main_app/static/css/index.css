@@ -7,8 +7,6 @@ body {
   background-repeat: no-repeat; 
   background-size: cover;
   background-attachment: fixed;
-  /* background-color: #DDBEA9; */
-  /* color: #555A49; */
   color: #6B917E;
 }
 
@@ -25,9 +23,17 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
 p {
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: left;
 }
 
@@ -59,10 +65,9 @@ h1, p {
   justify-content: space-between;
   background-color: #F4F6F3;
   opacity: 90%;
-  /* border-radius: 25%; */
   padding: 20px;
   margin: 20px;
-  width: 75%;
+  width: 65%;
   box-shadow: 0 2px 4px 0 #272b2e, 0 3px 10px 0 #272b2e;
   border-radius: 25px;
 }
@@ -98,6 +103,14 @@ h1, p {
 
 .poem-add {
   flex-direction: column;
-  padding-top: 2px;
-  padding-left: 15px;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 20px;
+  /* padding-left: px; */
+}
+
+.poem-add > h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom:20px;
 }

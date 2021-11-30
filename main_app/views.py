@@ -36,7 +36,7 @@ def poems_index(request):
 
   
 def user_index(request):
-  poems = Poem.objects.filter(user=request.user)
+  poems = Poem.objects.filter(user=request.user).order_by("-pk")
   for poem in poems:
     s = "\n"
     poem.lines = poem.lines.replace("<br>", s)

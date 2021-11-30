@@ -7,7 +7,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   width: 100%;
   font-family: 'Quicksand', sans-serif;
 }
@@ -31,7 +30,7 @@ nav {
 
 .logo {
   color: #EAEDE8;
-  font-size: 1.5em;
+  font-size: 2em;
   padding-left: 10px;
 }
 
