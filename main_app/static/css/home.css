@@ -52,22 +52,34 @@ section {
   width: 100%;
 }
 
+button {
+  border-radius: 25px;
+  color: #6B917E;
+  font-weight: bold;
+  opacity: 90%;
+}
+
 .login-btn {
   width: 120px;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   height: 2.5em;
+  background: #F4F6F3;
+  font-weight: bold;
 }
 
 .signup-tag {
-  /* height: .5em; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-decoration: none;
 }
 
 .signup-btn {
   height: 2.5em;
   width: 120px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F4F6F3;
+  font-weight: bold;
 }
