@@ -16,7 +16,7 @@
       <div class='poem-text' id="{{poem.title}}" hidden>
       <p>{{poem.lines|linebreaksbr}}</p>
     </div>
-    <button id="{{poem.title}}-btn" class='show-button submit-form bookmark' onclick="hidePoem('{{poem.title}}')"><i class="fas fa-ellipsis-h"></i></button>
+    <button id="{{poem.title}}-btn" class='show-button' onclick="hidePoem('{{poem.title}}')"><i class="fas fa-ellipsis-h"></i></button>
   </div>
   <div>
       <a href="{% url 'poems_delete' poem.id %}"><button type="submit" class="submit-form bookmark"><i class="fas fa-bookmark fa-2x"></i></button></a>

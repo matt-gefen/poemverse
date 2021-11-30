@@ -100,14 +100,52 @@ h1, p {
   justify-content: space-between;
 }
 
+
+.poem-add-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  height: 100%;
+  width: 90%;
+}
+
+.poem-add {
+  flex-direction: column;
+  align-self: top;
+  align-items: center;
+  width: 70%;
+  justify-content: left;
+  padding-bottom: 20px;
+}
+
+.poem-add h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom:20px;
+}
+
+.poem-add label {
+  font-size: 1.5em;
+}
+
 .submit-form {
   background: transparent;
   border: 0px;
-  color: #6B917E;
+  color: #F4F6F3;
+  background-color: #6B917E;
+  font-size: 1.5em;
+  border: 2px solid #F4F6F3;
+  border-radius: 25px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
 }
 
 .bookmark {
   color: #6B917E;
+  background-color: transparent;
 }
 
 .bookmark :hover {
@@ -125,26 +163,8 @@ h1, p {
   align-items: right;
 }
 
-.poem-add-div {
-  padding-top: 20px;
-  height: 100%;
-}
-
-.poem-add {
-  flex-direction: column;
-  align-self: top;
-  align-items: center;
-  width: auto;
-  justify-content: left;
-  padding-bottom: 20px;
-}
-
-.poem-add h2 {
-  font-size: 2em;
-  margin-top: 0;
-  margin-bottom:20px;
-}
-
-.poem-add label {
-  font-size: 1.5em;
+.show-button {
+  color: #6B917E;
+  background-color: transparent;
+  border: 0;
 }
