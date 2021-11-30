@@ -1,16 +1,30 @@
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #ABC4B0; */
   background-image: url("/static/images/tree_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 
 }
+
+main {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 h1 {
   font-size: 3em;
@@ -19,7 +33,7 @@ h1 {
 
 p {
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -27,14 +41,33 @@ h1, p {
   font-weight: 100;
 }
 
+section {
+  width: 100%;
+}
+
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .login-btn {
-  width: 50%;
+  width: 120px;
   font-family: 'Heebo', sans-serif;
   font-weight: 400;
+  height: 2.5em;
+}
+
+.signup-tag {
+  /* height: .5em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-btn {
+  height: 2.5em;
+  width: 120px;
 }

@@ -19,7 +19,7 @@
     <input type="hidden" name='next' value="{{ next }}">
     <button type="submit" name='submit' class='login-btn'>Login</button>
     </form>
-    <a href="{% url 'signup' %}"><button class='login-btn'>Sign Up</button</a></li>
   </section>
+  <a class="signup-tag" href="{% url 'signup' %}"><button class='signup-btn'>Sign Up</button></a>
 {% comment %} {% endif %} {% endcomment %}
 {% endblock content %}
