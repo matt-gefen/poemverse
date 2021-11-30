@@ -45,15 +45,16 @@ a {
 
 .nav-link:link {
   text-decoration: none;
-  color: white;
+  color: #EAEDE8;
 }
 
 .nav-link:visited {
-  color: white;
+  color: #EAEDE8;
 }
 
 .nav-link:hover {
-  color: white;
+  /* color: #272b2e; */
+  text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff;
 }
 
 .nav-link:active {
