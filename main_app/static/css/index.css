@@ -24,7 +24,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  width: 70%;
   height: 100%;
   overflow-y: scroll;
 }
