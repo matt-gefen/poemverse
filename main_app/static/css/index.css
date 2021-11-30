@@ -42,6 +42,7 @@ h2 {
 h3 {
   font-size: 1.5em;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -81,8 +82,16 @@ h1, p {
   padding: 20px;
   margin: 20px;
   width: 65%;
+  max-height: 75%;
+  overflow-y: scroll;
   box-shadow: 0 2px 4px 0 #272b2e, 0 3px 10px 0 #272b2e;
   border-radius: 25px;
+}
+
+.verse {
+  max-height:fit-content;
+  overflow-y:visible;
+
 }
 
 .buttons {
@@ -116,15 +125,26 @@ h1, p {
   align-items: right;
 }
 
+.poem-add-div {
+  padding-top: 20px;
+  height: 100%;
+}
+
 .poem-add {
   flex-direction: column;
+  align-self: top;
   align-items: center;
+  width: auto;
   justify-content: left;
   padding-bottom: 20px;
 }
 
-.poem-add > h2 {
+.poem-add h2 {
   font-size: 2em;
   margin-top: 0;
   margin-bottom:20px;
+}
+
+.poem-add label {
+  font-size: 1.5em;
 }
