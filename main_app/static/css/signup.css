@@ -30,6 +30,7 @@ form {
 }
 
 h1 {
+  font-size: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,4 +48,9 @@ th {
   /* align-items: center; */
   /* justify-content: flex-start; */
   gap: 10px;
+  font-size: 1.3em;
+}
+
+.submit {
+  margin-top: 20px;
 }
