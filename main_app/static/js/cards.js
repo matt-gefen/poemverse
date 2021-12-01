@@ -5,10 +5,10 @@ function hidePoem(name) {
   console.log(poemdiv)
   if (poemdiv.hidden) {
     poemdiv.hidden = false
-    poembtn.innerHTML = `<i class="fas fa-times"></i>`
+    poembtn.innerHTML = `<i class="fas fa-minus fa-2"></i>`
   } else {
     poemdiv.hidden = true
-    poembtn.innerHTML = `<i class="fas fa-ellipsis-h"></i>`
+    poembtn.innerHTML = `<i class="fas fa-plus fa-2"></i>`
   }
 }
 
