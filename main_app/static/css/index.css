@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0;
 }
 
@@ -82,7 +82,7 @@ h1, p {
   padding: 20px;
   margin: 20px;
   width: 65%;
-  max-height: 75%;
+  max-height: 70%;
   overflow-y: scroll;
   box-shadow: 0 2px 4px 0 #272b2e, 0 3px 10px 0 #272b2e;
   border-radius: 25px;
@@ -161,6 +161,7 @@ h1, p {
 
 .redo {
   color: #F4F6F3;
+  margin-bottom: 20px;
 }
 
 .bookmark-container {

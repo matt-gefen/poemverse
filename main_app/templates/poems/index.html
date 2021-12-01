@@ -7,6 +7,7 @@
 <script src="https://kit.fontawesome.com/9871a62a24.js" crossorigin="anonymous"></script>
 {% endblock head %}
 {% block content %}
+<div class="poem-form-div">
   <div class='poem'>
     <div>
       <h2>{{poem.title}}</h2>
@@ -29,4 +30,5 @@
     <a href="{% url 'poems_index' %}" class="redo"><i class="fas fa-redo-alt fa-3x"></i></a>
     <div></div>
   </div>
+</div>
 {% endblock content %}
