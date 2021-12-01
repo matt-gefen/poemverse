@@ -7,7 +7,7 @@ Booting up the site, users will be presented with a random poem pulled from the 
 Users can also add their own poetry to their anthology: putting their works side by side with some of the greats.
 
 ## Deployed Site
-[Poemverse](http://poemverse.herokuapp.com/)
+[Poemverse](https://poemverse.herokuapp.com/)
 ## Resources
 [Notion Planning Hub](https://www.notion.so/matt-gefen/Poemverse-5a94d4de6c044a6d9c39a8e2b2d3aa5d)
 - Link includes embedded wireframe, initial ERD, and other planning docs
@@ -38,3 +38,8 @@ Application built in:
 
 Icons provided by [FontAwesome](https://fontawesome.com/)
 
+## Next Steps
+Some things that I am looking to implement in future updates:
+- Users should be able to filter saved poems by title and author
+- Users should be able to update self-added poems
+- Users should be able to search the api by Author and Title
