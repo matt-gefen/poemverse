@@ -56,18 +56,25 @@ section {
 
 button {
   border-radius: 25px;
-  color: #6B917E;
+  color: #F4F6F3;
   font-weight: bold;
   opacity: 90%;
 }
 
 .login-btn {
-  width: 120px;
+  font-size: 1em;
+  width: 15vw;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 2.5em;
-  background: #F4F6F3;
+  background: #6B917E;
   font-weight: bold;
+  border: 0;
+  opacity: 100%;
+}
+
+.login-btn:hover {
+  background-color: #272b2e;
 }
 
 .signup-tag {
@@ -79,9 +86,16 @@ button {
 }
 
 .signup-btn {
+  font-size: 1em;
   height: 2.5em;
-  width: 120px;
+  width: 15vw;
   font-family: 'Quicksand', sans-serif;
-  background-color: #F4F6F3;
+  background-color: #6B917E;
   font-weight: bold;
+  border: 0;
+  opacity: 100%;
+}
+
+.signup-btn:hover {
+  background-color: #272b2e;
 }

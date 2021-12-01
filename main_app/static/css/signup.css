@@ -59,4 +59,16 @@ th {
   height: 10%;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
+  font-size: 1em;
+  height: 2.5em;
+  width: 15vw;
+  background-color: #6B917E;
+  color: #F4F6F3;
+  font-weight: bold;
+  border: 0;
+  border-radius: 25px;
+}
+
+.submit:hover {
+  background-color: #272b2e;
 }
