@@ -38,3 +38,8 @@ Application built in:
 
 Icons provided by [FontAwesome](https://fontawesome.com/)
 
+## Next Steps
+Some things that I am looking to implement in future updates:
+- Users should be able to filter saved poems by title and author
+- Users should be able to update self-added poems
+- Users should be able to search the api by Author and Title
