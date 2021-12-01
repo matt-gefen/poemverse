@@ -5,9 +5,15 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
 {% endblock head %}
 {% block content %}
+  <div class='verse-heading'>
+    <h2 class='verse-title'>Personal Poem Anthology</h2>
+  </div>
 <div class='poem-div'>
 {% for poem in poems %}
   <div class="poem verse">
+    <div class='bookmark-div'>
+      <a class="bookmark-a" href="{% url 'poems_delete' poem.id %}"><button type="submit" class="submit-form bookmark verse-mark"><i class="fas fa-bookmark fa-1x"></i></button></a>
+    </div>
     <div>
       <h2>{{poem.title}}</h2>
       <h3>{{poem.author}}</h3>
@@ -15,9 +21,6 @@
       <p>{{poem.lines|linebreaksbr}}</p>
     </div>
     <button id="{{poem.title}}-btn" class='show-button' onclick="hidePoem('{{poem.title}}')"><i class="fas fa-ellipsis-h"></i></button>
-  </div>
-  <div>
-      <a href="{% url 'poems_delete' poem.id %}"><button type="submit" class="submit-form bookmark"><i class="fas fa-bookmark fa-2x"></i></button></a>
   </div>
   </div>
 {% endfor %}

@@ -2,22 +2,21 @@
 {% load static %}
 
 {% block head %}
-{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/> {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
-<script src="https://kit.fontawesome.com/9871a62a24.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/index-nav.css' %}"/>
 {% endblock head %}
 {% block content %}
 <div class="poem-form-div">
   <div class='poem'>
-    <div>
-      <h2>{{poem.title}}</h2>
+    <div class="index">
+      <h2 class='index-title'>{{poem.title}}</h2>
       <h3>{{poem.author}}</h3>
       <p>{{poem.lines|linebreaksbr}}</p>
     </div>
   <div></div>
-    <form action="{% url 'poems_add' %}" class="poemverse-poem" method="post">
+  <form action="{% url 'poems_add' %}" class="poemverse-poem" method="post">
     {% csrf_token %}
-    <div class='bookmark-container'>
+    <div class='bookmark-div'>
       <button type="submit" class="submit-form bookmark"><i class="fas fa-bookmark fa-2x"></i></button>
     </div>
     <textarea type='text' name='title' hidden>{{poem.title|linebreaksbr}}</textarea>

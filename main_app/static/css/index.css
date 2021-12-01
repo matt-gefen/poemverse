@@ -88,10 +88,34 @@ h1, p {
   border-radius: 25px;
 }
 
+.index {
+  width:80%;
+}
+
 .verse {
+  flex-direction: column;
   max-height:fit-content;
   overflow-y:visible;
+  width: 90%;
 
+}
+
+.verse-heading {
+  background-color: #F4F6F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  width: 80%;
+  opacity: 90%;
+}
+
+.verse-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* color: #F4F6F3; */
+  /* text-shadow: 2px 2px 4px #000000; */
 }
 
 .buttons {
@@ -150,9 +174,22 @@ h1, p {
   background-color: #272b2e;
 }
 
+.bookmark-a {
+  padding:0;
+}
+
+.bookmark-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .bookmark {
   color: #6B917E;
   background-color: transparent;
+}
+
+.verse-mark {
+  padding: 0;
 }
 
 .bookmark :hover {
@@ -181,4 +218,41 @@ h1, p {
   width: 100%;
   display: flex;
   align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .poem-div{
+    width: 90%;
+  }
+  .poem {
+    width: 90%;
+  }
+
+  .verse {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .bookmark-div {
+    height: fit-content;
+  }
+  
+  p {
+    font-style: italic;
+    font-size: 1em;
+    text-align: left;
+    width: 80vw;
+  }
 }
