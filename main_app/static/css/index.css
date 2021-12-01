@@ -225,6 +225,10 @@ h1, p {
   align-items: flex-start;
 }
 
+.show-button:hover {
+  color: #272b2e;
+}
+
 @media only screen and (max-width: 600px) {
 
   .poem-div{
