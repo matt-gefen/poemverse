@@ -62,7 +62,7 @@ class PoemCreate(CreateView):
   def form_valid(self, form):
     form.instance.user = self.request.user
     return super().form_valid(form)
-  success_url = '/poems/'
+  success_url = '/poems/myverse'
 
 def poems_add(request):
   form = request.POST
