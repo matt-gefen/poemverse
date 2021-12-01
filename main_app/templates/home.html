@@ -6,13 +6,17 @@
 {% endblock title %}
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 {% endblock head %}
 {% block content %}
-  <h1>Welcome to the Poemverse</h1>
-  <p>"Every single soul is a poem."<br>
+  <h1 class="animate__animated animate__fadeIn animate__slower">Welcome to Poemverse</h1>
+  <p class="animate__animated animate__fadeIn animate__slower">"Every single soul is a poem."<br>
     Michael Franti</p>
-{% comment %} {% if not user.is_authenticated %} {% endcomment %}
-  <section>
+{% if not user.is_authenticated %}
+  <section class="animate__animated animate__fadeIn animate__delay-2s">
     <form action="{% url 'home' %}" method='post' class='login' %>
     {% csrf_token %}
     {{ form.as_p }}
@@ -20,6 +24,8 @@
     <button type="submit" name='submit' class='login-btn'>Login</button>
     </form>
   </section>
-  <a class="signup-tag" href="{% url 'signup' %}"><button class='signup-btn'>Sign Up</button></a>
-{% comment %} {% endif %} {% endcomment %}
+  <a class="signup-tag animate__animated animate__fadeIn animate__delay-2s" href="{% url 'signup' %}"><button class='signup-btn'>Sign Up</button></a>
+{% else %}
+  <a class="signup-tag animate__animated animate__fadeIn animate__delay-2s" href="{% url 'poems_index' %}"><button class='signup-btn'>Continue</button></a>
+{% endif %}
 {% endblock content %}
