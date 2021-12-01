@@ -70,17 +70,37 @@ a {
 
 .hamburger {
   display: none;
+  color: #EAEDE8;
 }
 
 @media only screen and (max-width: 600px) {
   nav {
     font-size: 1.5em;
   }
+
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-nav {
+    font-size: 1.8em;
+  }
+
+  .small-nav:hover {
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff;
+  }
+
   .widescreen-nav {
     display: none;
   }
   .hamburger {
     display:inline;
+    color: #EAEDE8;
+  }
+
+  .hamburger-button {
+    color: #EAEDE8;
   }
 
 }
