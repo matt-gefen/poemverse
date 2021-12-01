@@ -45,6 +45,10 @@ h3 {
   margin-bottom: 15px;
 }
 
+.empty-text {
+  color: #F4F6F3;
+}
+
 p {
   font-style: italic;
   font-size: 1.5em;

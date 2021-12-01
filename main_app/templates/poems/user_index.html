@@ -5,9 +5,10 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
 {% endblock head %}
 {% block content %}
-  <div class='verse-heading'>
-    <h2 class='verse-title'>Personal Poem Anthology</h2>
-  </div>
+{% if poems|length > 0 %}
+<div class='verse-heading'>
+  <h2 class='verse-title'>Personal Poem Anthology</h2>
+</div>
 <div class='poem-div'>
 {% for poem in poems %}
   <div class="poem verse">
@@ -25,4 +26,9 @@
   </div>
 {% endfor %}
 </div>
+{% else %}
+<h3 class='empty-text'>Why does the feeling of emptiness occupy so much space?</h3>
+
+{% endif %}
+
 {% endblock content %}
