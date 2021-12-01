@@ -5,26 +5,30 @@
 {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/> {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'css/confirm_delete.css' %}"/>
+<script src="https://kit.fontawesome.com/9871a62a24.js" crossorigin="anonymous"></script>
 {% endblock head %}
 
 {% block content %}
 
+<div class='poem-form-div'>
 <div class='poem poem-add poem-remove'>
-  <a 
-    href="{% url 'user_index' %}" 
-  >
-    Cancel
-  </a>
+  <div class='back-button'>
+      <a class="bookmark" href="{% url 'user_index' %}">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </a>
+  </div>
+
   <div class="page-header">
     <h1>Remove Poem?</h1>
   </div>
-  <div>
+  <div class='form'>
     <form action="" method="POST" class="form">
       {% csrf_token %}
-      <button type="submit">Remove</button>
+      <button class='submit-form submit' type="submit">Remove</button>
     </form>
   </div>
 
+</div>
 </div>
 
 {% endblock %}
