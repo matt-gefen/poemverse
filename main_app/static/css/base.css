@@ -81,7 +81,7 @@ a {
   nav {
     font-size: 1.5em;
     flex-direction: column;
-    height:;
+    height: 100%;
   }
 
   .mobile-nav {
