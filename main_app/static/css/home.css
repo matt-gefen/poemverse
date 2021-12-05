@@ -99,3 +99,14 @@ button {
 .signup-btn:hover {
   background-color: #272b2e;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .login-btn {
+    width: 40vw;
+  }
+  .signup-btn {
+    width: 40vw;
+  }
+
+}
