@@ -15,23 +15,24 @@
 </head>
 <body>
   <nav>
-    <a class='nav-link' href="{% url 'poems_index' %}"><h3 class='logo'>Poemverse</h3></a>
+    <div class='mobile-nav'>
+      <a class='nav-link' href="{% url 'poems_index' %}"><h3 class='logo'>Poemverse</h3></a>
+      <button class='show-button hamburger'><i class="fas fa-bars fa-2x hamburger-button"></i></button>
+    </div>
     <ul class='nav-ul widescreen-nav'>
       <li><a class='nav-link' href="{% url 'poems_create' %}">Add a Poem</a></li>
       <li><a class='nav-link' href="{% url 'user_index' %}">My Verse</a></li>
       <li><a class='nav-link' href="{% url 'logout' %}">Log out</a></li>
     </ul>
-  <button class='show-button hamburger'><i class="fas fa-bars fa-2x hamburger-button"></i></button>
-    
+  <div class='hidden-nav' hidden>
+    <ul class='nav-ul'>
+      <li><a class='nav-link small-nav' href="{% url 'poems_create' %}">Add a Poem</a></li>
+      <li><a class='nav-link small-nav' href="{% url 'user_index' %}">My Verse</a></li>
+      <li><a class='nav-link small-nav' href="{% url 'logout' %}">Log out</a></li>
+    </ul>
+  </div>
   </nav>
   <main>
-    <div class='hidden-nav' hidden>
-      <ul class='nav-ul'>
-        <li><a class='nav-link small-nav' href="{% url 'poems_create' %}">Add a Poem</a></li>
-        <li><a class='nav-link small-nav' href="{% url 'user_index' %}">My Verse</a></li>
-        <li><a class='nav-link small-nav' href="{% url 'logout' %}">Log out</a></li>
-      </ul>
-    </div>
     {% block content %}
     {% endblock content %}
   </main>
