@@ -1,4 +1,7 @@
 # Create Your Poemverse  
+>*Poetry is when an emotion has found its thought and the thought has found words.*  
+Robert Frost
+
 ## Background
 Using Poemverse, users are able to create a personalized anthology of some of the best works of verse available on the [PoetryDB](https://poetrydb.org/index.html)  
 
