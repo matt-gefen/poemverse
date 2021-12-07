@@ -72,3 +72,12 @@ th {
 .submit:hover {
   background-color: #272b2e;
 }
+
+@media only screen and (max-width: 800px) {
+  .submit {
+    width: 80vw;
+  }
+  .helptext {
+    display: none;
+  }
+}
